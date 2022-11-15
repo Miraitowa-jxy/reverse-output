@@ -1,0 +1,13 @@
+#include <stdio.h>
+int i = 0;
+int a[1000];
+int main()
+{
+    scanf_s("%d", &a[i]);
+    if (getchar() != '\n') {
+        i++;
+        main();
+    }
+    printf("%d", a[i]); 
+    i--;
+}
